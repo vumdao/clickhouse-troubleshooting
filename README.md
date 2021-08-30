@@ -20,6 +20,7 @@
  * [Get tables size](#Get-tables-size)
  * [Understand clickhouse](#Understand-clickhouse-Compression)
  * [Enable allow_introspection_functions for query profiling](#Enable-allow_introspection_functions-for-query-profiling)
+ * [parts_to_throw_insert](#parts_to_throw_insert)
 
 
 ## 🚀 **max_part_loading_threads** <a name="max_part_loading_threads"></a>
@@ -273,7 +274,7 @@ clone │
 └───────────┴──────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 🚀 parts_to_throw_insert
+## 🚀 parts_to_throw_insert <a name="parts_to_throw_insert"></a>
 - [parts_to_throw_insert](https://clickhouse.tech/docs/en/operations/settings/merge-tree-settings/#parts-to-throw-insert)
   If the number of active parts in a single partition exceeds the parts_to_throw_insert value, INSERT is interrupted with the Too many parts (N). Merges are processing significantly slower than inserts exception.
 
